@@ -21,6 +21,19 @@
     --bg-color: #fff;
 }
 
+/* Custon Scroon Bar */
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: var(--text-color);
+}
+
+html::-webkit-scrollbar-thumb{
+background-color: var(--main-color);
+border-radius: 5rem;
+}
+/* finish Custon Scroon Bar */
+
 body {
     background: var(--text-color);
     color: var(--bg-color);
@@ -44,11 +57,19 @@ header {
     /* background: var(--main-color); */
 }
 
-.header.shadow{
+/* efeito header branco quando leva a pagina para baixo */
+header.shadow{
     background: var(--bg-color);
-    
+    box-shadow: 0 0 4px rgb(14 55 54/ 15%);
+}
+header.shadow .navbar a{
+    color: var(--text-color);
+}
+header.shadow .logo{
+    color: var(--text-color);
 }
 
+/* logo */
 .logo {
     font-size: 1.1rem;
     font-weight: 600;
