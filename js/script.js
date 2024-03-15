@@ -1,12 +1,25 @@
 "use strict"
 let header = document.querySelector("header")
+let menu = document.querySelector("#menu-icon")
+let navbar = document.querySelector(".navbar")
 
 //eventos
 window.addEventListener("scroll", ()=>{
 
 header.classList.toggle("shadow",window.scrollY > 0)
-  
-})
+});
+
+// menu hamburguer
+menu.onclick = ()=>{
+  menu.classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+}
+
+window.onscroll =()=>{
+  menu.classList.remove('bx-x');
+  navbar.classList.remove('active');
+};
+// fim hamburguer
 
 var swiper = new Swiper('.home', {
     spaceBetween: 30,
