@@ -23,15 +23,16 @@
 
 /* Custon Scroon Bar */
 
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
     width: 0.5rem;
     background: var(--text-color);
 }
 
-html::-webkit-scrollbar-thumb{
-background-color: var(--main-color);
-border-radius: 5rem;
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 5rem;
 }
+
 /* finish Custon Scroon Bar */
 
 body {
@@ -58,14 +59,16 @@ header {
 }
 
 /* efeito header branco quando leva a pagina para baixo */
-header.shadow{
+header.shadow {
     background: var(--bg-color);
     box-shadow: 0 0 4px rgb(14 55 54/ 15%);
 }
-header.shadow .navbar a{
+
+header.shadow .navbar a {
     color: var(--text-color);
 }
-header.shadow .logo{
+
+header.shadow .logo {
     color: var(--text-color);
 }
 
@@ -349,19 +352,95 @@ section filmes */
     padding: 2px;
     font-size: 2rem;
     border-radius: 50%;
-    border: 4px solid rgb(2, 3, 7,0.4);
+    border: 4px solid rgb(2, 3, 7, 0.4);
     color: var(--main-color);
 
 }
-.social .bx :hover{
+
+.social .bx :hover {
     background: var(--main-color);
     color: var(--bg-color);
     transition: 0.2s all linear;
 }
 
 /* copyright */
-.copyright{
+.copyright {
     padding: 20px;
     text-align: center;
     color: var(--bg-color);
+}
+
+@media (max-width:1080px) {
+    .home-text {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 18px 4%;
+    }
+
+    section {
+        padding: 50px 4%;
+    }
+
+    .home-text {
+        padding: 0 4%;
+    }
+
+    .home-text h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:774px) {
+    header {
+        padding: 12px 4%;
+    }
+
+    #menu-icon {
+        display: initial;
+        color: var(--bg-color);
+    }
+
+    header.shadow #menu-icon{
+        color: var(--text-color);
+    }
+
+    .navbar {
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        row-gap: 1.4rem;
+        padding: 20px;
+        box-shadow: 4px 4px 0 4px rgb(14 55 54/ 15%);
+        transition: 0.2s all linear;
+        text-align: center;
+    }
+
+    .navbar a{
+        width: 100%;
+        color: var(--text-color);
+    }
+
+    .navbar a:hover {
+       color: var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+    }
+
+    .navbar a::after{
+        display: none;
+    }
+
+    .navbar.active{
+        top: 100%;
+    }
+    .home-text h1{
+        font-size: 2.4rem;
+    }
 }
