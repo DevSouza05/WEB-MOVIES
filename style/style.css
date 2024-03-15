@@ -370,6 +370,7 @@ section filmes */
     color: var(--bg-color);
 }
 
+
 @media (max-width:1080px) {
     .home-text {
         padding: 0 100px;
