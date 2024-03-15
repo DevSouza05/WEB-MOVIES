@@ -282,4 +282,6 @@ section filmes */
 }
 .newsletter .btn{
     text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
 }
