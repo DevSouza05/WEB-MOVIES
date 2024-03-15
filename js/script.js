@@ -1,5 +1,13 @@
 "use strict"
+let header = document.querySelector("header")
 
+//eventos
+
+window.addEventListener("scroll", ()=>{
+
+
+  
+})
 
 var swiper = new Swiper('.home', {
     spaceBetween: 30,
