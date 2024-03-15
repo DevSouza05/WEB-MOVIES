@@ -160,7 +160,6 @@ header {
     margin-bottom: 1rem;
   
 }
-
 .play{
     position: absolute;
     right: 4rem;
@@ -176,7 +175,6 @@ header {
     border: 4px solid rgb(2, 3, 7,0.4);
     color: var(--main-color);
 }
-
 .play .bx:hover{
     background: var(--main-color);
     color: var(--bg-color);
@@ -198,7 +196,6 @@ section filmes */
 }
 
 /* MOVIES CONTAINER */
-
 .movies-container{
     max-width: 968px;
     margin-right: auto;
@@ -208,35 +205,29 @@ section filmes */
     gap: 1rem;
     margin-top: 2rem;
 }
-
 .box .box-img{
     width: 100%;
     height: 270px;
 
 }
-
 .box .box-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .box .box-img img:hover{
     transform: translateY(-10px);
     transition: 0.2s all linear;
 }
-
 .box h3{
     font-size: 0.9rem;
     font-weight: 500;
 }
-
 .box span{
     font-size: 13px;
 }
 
 /* coming  s*/
-
 .coming-container{
     display: grid;
     gap: 1rem;
@@ -246,11 +237,49 @@ section filmes */
     margin-top: 2rem;
 
 }
-
 .coming-container .box-img img:hover{
     transform: translateY(0);
 }
-
 .coming-container .box{
     width: 100px;
+}
+
+/* Newsletter */
+.newsletter{
+    max-width: 968px;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+.newsletter h2{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+.newsletter form{
+    background: var(--bg-color);
+    padding: 10px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.newsletter form input{
+    border: none;
+    outline: none;
+}
+.newsletter form input::placeholder{
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.newsletter form .email{
+    width: 280px;
+}
+.newsletter .btn{
+    text-transform: uppercase;
 }
