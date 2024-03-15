@@ -152,6 +152,7 @@ header {
     text-transform: uppercase;
 }
 
+/* texto dos primerios slides carrosel */
 .home-text h1{
     color: var(--bg-color);
     font-size: 4rem;
@@ -166,6 +167,7 @@ header {
     bottom: 10%;
 }
 
+/* botao play no inferior direito */
 .play .bx{
     background: var(--bg-color);
     padding: 10px;
@@ -181,9 +183,9 @@ header {
     transition: 0.2s all linear;
 }
 
+
 /* 
 section filmes */
-
 
 .heading{
     max-width: 968px;
@@ -233,7 +235,7 @@ section filmes */
     font-size: 13px;
 }
 
-/* coming */
+/* coming  s*/
 
 .coming-container{
     display: grid;
@@ -243,4 +245,12 @@ section filmes */
     margin-right: auto;
     margin-top: 2rem;
 
+}
+
+.coming-container .box-img img:hover{
+    transform: translateY(0);
+}
+
+.coming-container .box{
+    width: 100px;
 }
