@@ -11,11 +11,10 @@ var swiper = new Swiper('.home', {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-    },
-    
+    }
   });
 
-
+  // carrosel coming soon
   var swiper = new Swiper(".coming-container", {
     spaceBetween:20,
     loop:true,
